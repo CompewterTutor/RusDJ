@@ -8,4 +8,6 @@ edition = "2021"
 [dependencies]
 cpal = "0.15.3"
 ness_stretch = "0.5.1"
+serde = "1.0.214"
 slint = "1.8.0"
+symphonia = "0.5.4"
