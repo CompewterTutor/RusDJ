@@ -12,3 +12,77 @@
 
 
 ## Project Structure
+```
+my_app/
+├── Cargo.toml
+├── src/
+│   ├── main.rs
+│   ├── app.rs
+│   ├── ui/
+│   │   ├── mod.rs
+│   │   ├── main_window.slint
+│   │   ├── components/
+|   |   |   ├── mod.rs
+|   |   |   ├── PlayButton/
+|   |   |   ├── CueButton/
+|   |   |   ├── EQKnob/
+|   |   |   ├── PitchSlider/
+|   |   |   ├── FaderSlider/
+|   |   |   ├── CrossFader/
+|   |   |   ├── TrackTime/
+|   |   |   ├── Header/
+|   |   |   ├── StatusBar/
+|   |   |   ├── TrackPhaseView/
+|   |   |   ├── PreferencesDialog/
+|   |   |   ├── AboutDialog/
+|   |   |   ├── ArrangementView/
+|   |   |   ├── BPMDisplay/
+|   |   |   ├── SongKeyDisplay/
+|   |   |   ├── LoopToolsView/
+|   |   |   ├── HotCueTools/
+|   |   |   ├── PitchLockToggle/
+|   |   |   ├── TrackWaveformView/
+|   |   |   ├── FileBrowserView/
+|   |   |   ├── PlaylistListbox/
+|   |   |   ├── FolderTreeView/
+|   |   |   ├── TrackTableView/
+|   |   |   ├── TrackDeck/
+│   │   └── helpers.rs
+│   │   └── tests/                # UI-specific tests
+│   │       └── ui_tests.rs
+│   ├── models/
+│   │   ├── mod.rs
+│   │   ├── user.rs
+│   │   ├── product.rs
+│   │   └── tests/                # Model-specific tests
+│   │       └── model_tests.rs
+│   ├── services/
+│   │   ├── mod.rs
+│   │   ├── data_service.rs
+│   │   ├── auth_service.rs
+│   │   └── tests/                # Service-specific tests
+│   │       └── service_tests.rs
+│   ├── controllers/
+│   │   ├── mod.rs
+│   │   ├── main_controller.rs
+│   │   ├── user_controller.rs
+│   │   └── tests/                # Controller-specific tests
+│   │       └── controller_tests.rs
+│   ├── utils/
+│   │   ├── mod.rs
+│   │   ├── file_helper.rs
+│   │   └── tests/                # Utility function tests
+│   │       └── utils_tests.rs
+│   └── config/
+│       ├── mod.rs
+│       ├── settings.rs
+│       └── tests/
+│           └── config_tests.rs
+├── tests/                         # Integration tests
+│   ├── integration_test1.rs
+│   └── integration_test2.rs
+└── resources/
+    ├── images/
+    ├── fonts/
+    └── styles/
+```
